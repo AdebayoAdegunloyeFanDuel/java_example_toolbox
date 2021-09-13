@@ -1,7 +1,6 @@
-package basics.datatypes.collections;
+package basics.collections;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 

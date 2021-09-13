@@ -1,4 +1,4 @@
-package basics.datatypes.loops;
+package basics.loops;
 
 public class Loops {
     // Standard for loop where a counter needs to be managed

@@ -1,4 +1,4 @@
-package basics.datatypes.collections;
+package basics.collections;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -33,6 +33,7 @@ public class MapsExamples {
         MapsExamples mapsExamples = new MapsExamples();
 
         mapsExamples.weMustAddAKeyAndAValue("newKey1", "value string 1");
+        mapsExamples.hashMapImplementation.containsKey("newKey1");
 
         System.out.println(mapsExamples.hashMapImplementation.entrySet());
 

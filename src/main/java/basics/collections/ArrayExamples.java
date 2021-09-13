@@ -1,6 +1,4 @@
-package basics.datatypes.collections;
-
-import java.util.Arrays;
+package basics.collections;
 
 public class ArrayExamples {
     private int[] short_fib = new int[5];
