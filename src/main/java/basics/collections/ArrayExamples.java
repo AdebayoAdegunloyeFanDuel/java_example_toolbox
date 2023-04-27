@@ -1,8 +1,12 @@
 package basics.collections;
 
+import java.util.Arrays;
+
 public class ArrayExamples {
     private int[] short_fib = new int[5];
     private int[] long_fib = {0,1,1,2,3,5,8,13};
+
+    private static int[] marks = { 100, 75, 84 };
     private String[] names = {"Jamie", "Jon", "joffrey"};
 
     private int[] oddNums = {1,3,5,7,9};
@@ -13,6 +17,19 @@ public class ArrayExamples {
     public ArrayExamples() {
         setShort_fib();
         setTwoDArray();
+    }
+
+    public static int sumMarks() {
+        int sum = 0;
+        for ( int mark : marks) {
+            sum += mark;
+        }
+        return sum;
+    }
+
+    // Using Streams to find sum
+    public static int sumMarksUsingStreams() {
+        return Arrays.stream( marks ).sum();
     }
 
     public void printNames(){
@@ -50,5 +67,10 @@ public class ArrayExamples {
 
     public String[] getNames() {
         return names;
+    }
+
+    public static void main( String[] args ) {
+        System.out.println( "Normal sum is ====> " + sumMarks() );
+        System.out.println( "Stream sum is ===> " + sumMarksUsingStreams() );
     }
 }
